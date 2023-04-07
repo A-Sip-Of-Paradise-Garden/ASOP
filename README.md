@@ -12,6 +12,8 @@ yarn dev
 pnpm dev
 ```
 
+If you're getting an error, check here: https://bobbyhadz.com/blog/next-is-not-recognized-as-internal-or-external-command
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
