@@ -12,7 +12,7 @@ yarn dev
 pnpm dev
 ```
 
-If you're getting an error, check here: https://bobbyhadz.com/blog/next-is-not-recognized-as-internal-or-external-command
+If you're getting an error, make sure to install nextJS using '''npm install react react-dom next'''
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
