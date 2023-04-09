@@ -4,7 +4,7 @@ import ValueCard, { valueCardInfo } from "@/components/main-page/value-card";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center text-center gap-4 px-8">
+    <div className="flex flex-col items-center text-center gap-4">
       <h1 className="text-3xl">
         Welcome to <span className="text-emerald-400">ASOP</span> community
       </h1>
