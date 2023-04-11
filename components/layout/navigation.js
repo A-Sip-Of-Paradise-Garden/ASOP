@@ -1,11 +1,16 @@
 import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useUser } from "@auth0/nextjs-auth0/client";
+import { useContext } from "react";
+import { ModalContext } from "@/store/modal-context";
+import Menu from "./menu";
 
 const Navigation = () => {
   const { user } = useUser();
+  const { openModal } = useContext(ModalContext); 
 
   return (
+    <>
     <nav className="flex items-center h-16 justify-center px-2 border-b-2 border-emerald-400 mb-4">
       <div className="flex justify-between items-center w-full max-w-[1440px] px-8">
         <Link href="/">
@@ -35,12 +40,15 @@ const Navigation = () => {
           <button
             type="button"
             className="hover:bg-neutral-400/50 px-2 py-2 rounded-xl pointer cursor-pointer"
+            onClick={() => openModal("Menu", <Menu />)}
           >
             <AiOutlineMenu size={20} />
           </button>
         </div>
       </div>
     </nav>
+
+    </>
   );
 };
 
