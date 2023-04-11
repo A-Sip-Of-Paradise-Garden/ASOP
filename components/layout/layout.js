@@ -1,6 +1,5 @@
 import Navigation from "./navigation";
 import Head from "next/head";
-import Modal from "./modal";
 
 const Layout = (props) => {
   return (
@@ -18,7 +17,6 @@ const Layout = (props) => {
       <div className="flex justify-center h-full">
         <main className="w-full max-w-[1440px] px-8">{props.children}</main>
       </div>
-      <Modal />
     </>
   );
 };
