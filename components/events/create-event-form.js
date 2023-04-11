@@ -1,8 +1,7 @@
-import { useContext, useRef } from "react";
-import { ModalContext } from "@/store/modal-context";
+import { useRef } from "react";
 
-const CreateEventForm = () => {
-  const { closeModal } = useContext(ModalContext);
+const CreateEventForm = (props) => {
+  const { setShowModal } = props;
   const titleRef = useRef();
   const dateRef = useRef();
   const timeRef = useRef();
@@ -25,7 +24,7 @@ const CreateEventForm = () => {
       },
       body: JSON.stringify(newEvent),
     });
-    closeModal();
+    setShowModal(false);
   };
 
   return (
