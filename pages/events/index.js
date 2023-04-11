@@ -13,14 +13,9 @@ const Events = (props) => {
   const { user } = useUser();
   const { events } = props;
 
-  const onClickHandler = () => {
-    // const api = calendarRef.current.getApi();
-    // const event = {
-    //   id: "Test",
-    //   title: "my event",
-    //   start: "2023-04-11",
-    // };
-    // api.addEvent(event);
+  const onDateClickHandler = () => {
+    // TODO: add the functionality to this onDateClickHandler to open a new page with all the events listed,
+    // something like /events/:date
   };
 
   return (
@@ -47,7 +42,7 @@ const Events = (props) => {
         eventColor="#34D399"
         eventTextColor="#000000"
         initialView="dayGridMonth"
-        dateClick={onClickHandler}
+        dateClick={onDateClickHandler}
       />
     </div>
   );
